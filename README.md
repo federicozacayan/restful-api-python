@@ -63,7 +63,7 @@ You can find a tutorial of this project in the following site.
 
 All te responses have header `ContentType application/json`
 
-### List all devices
+### List all products
 
 **Definition**
 
@@ -89,11 +89,11 @@ All te responses have header `ContentType application/json`
 }
 ```
 
-### Registering a new device
+### Registering a new product
 
 **Definition**
 
-`POST /devices`
+`POST /product`
 
 **Arguments**
 
@@ -109,7 +109,7 @@ All te responses have header `ContentType application/json`
 }
 ```
 
-## Lookup device details
+## Lookup product details
 
 `GET /product/<identifier>`
 
@@ -124,11 +124,11 @@ All te responses have header `ContentType application/json`
 }
 ```
 
-## Delete a device
+## Delete a product
 
 **Definition**
 
-`DELETE /devices/<identifier>`
+`DELETE /product/<identifier>`
 
 **Response**
 
