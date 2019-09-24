@@ -135,7 +135,7 @@ All the responses have `ContentType application/json` header.
 **Response**
 
 - `500 Internal Error` if the product does not exist.
-- `204 No Content` on success.
+- `200 No Content` on success.
 ```json
 {
   "status": "200"
