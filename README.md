@@ -46,7 +46,7 @@ Press `CTRL+C` on the console.
 Run the following command to remove the container first and his image after.
 
 ```bash
-sudo docker rm python-project_api_1 && sudo docker rmi python-project_api
+sudo docker rm deploywith && sudo docker rmi pyenv:2.0
 ```
 
 Run the following command to remove what we name the base image.
