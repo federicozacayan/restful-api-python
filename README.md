@@ -4,11 +4,13 @@ This is a basic Hello-Wolrd appplication.
 
 ## Requirements
 
+It is assumed you have Linux OS, but you can run this project in Windows or MacOS also, just use the alternative  lines commands.
+
 **Linux**
 
 - `Docker` installed
 - `docker-compose` installed
-- Any browser like `Chrome` or any rest consumer application like `Postman` installed
+- Any rest consumer application like `Postman` installed or any plugin REST client in any browser (like "Advanced REST client" in Chrome )
 
 ## Set up
 
@@ -61,7 +63,7 @@ You can find a tutorial of this project in the following site.
 
 ## Usage
 
-All te responses have header `ContentType application/json`
+All the responses have `ContentType application/json` header.
 
 ### List all products
 
@@ -71,7 +73,7 @@ All te responses have header `ContentType application/json`
 
 **Response**
 
-- `200 OK` on success
+- `200 OK` on success.
 
 ```json
 {
@@ -97,11 +99,11 @@ All te responses have header `ContentType application/json`
 
 **Arguments**
 
-- `"name":string` a friendly name for this product
+- `"name":string` a friendly name for this product.
 
 **Response**
 
-- `201 Created` on success
+- `201 Created` on success.
 
 ```json
 {
@@ -115,7 +117,7 @@ All te responses have header `ContentType application/json`
 
 **Response**
 
-- `200 OK` on success
+- `200 OK` on success.
 
 ```json
 {
@@ -132,8 +134,8 @@ All te responses have header `ContentType application/json`
 
 **Response**
 
-- `500 Internal Error` if the product does not exist
-- `204 No Content` on success
+- `500 Internal Error` if the product does not exist.
+- `204 No Content` on success.
 ```json
 {
   "status": "200"
