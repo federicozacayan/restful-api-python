@@ -10,11 +10,11 @@ This is a basic Hello-Wolrd appplication.
 - `docker-compose` installed
 - Any browser like `Chrome` or any rest consumer application like `Postman` installed
 
-## Usage
+## Set up
 
 Running in linux console.
 
-### Set up
+### Prepare
 
 Clone this repository.
 
@@ -59,3 +59,82 @@ You can find a tutorial of this project in the following site.
 
 [https://federicozacayan.github.io/tutorial/restful-api-python/](https://federicozacayan.github.io/tutorial/restful-api-python/)
 
+## Usage
+
+All te responses have header `ContentType application/json`
+
+### List all devices
+
+**Definition**
+
+`GET /produc`
+
+**Response**
+
+- `200 OK` on success
+
+```json
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Federico Zacayan"
+    },
+    {
+      "id": 2,
+      "name": "Software Developer"
+    }
+  ],
+  "q": 2
+}
+```
+
+### Registering a new device
+
+**Definition**
+
+`POST /devices`
+
+**Arguments**
+
+- `"name":string` a friendly name for this product
+
+**Response**
+
+- `201 Created` on success
+
+```json
+{
+  "status": 201
+}
+```
+
+## Lookup device details
+
+`GET /product/<identifier>`
+
+**Response**
+
+- `200 OK` on success
+
+```json
+{
+  "id": 1,
+  "name": "Federico Zacayan"
+}
+```
+
+## Delete a device
+
+**Definition**
+
+`DELETE /devices/<identifier>`
+
+**Response**
+
+- `500 Internal Error` if the product does not exist
+- `204 No Content` on success
+```json
+{
+  "status": "200"
+}
